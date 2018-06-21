@@ -42,6 +42,7 @@ export interface IMultiSelectSettings {
   autoUnselect?: boolean;
   showCheckAll?: boolean;
   showUncheckAll?: boolean;
+  showConfirm?: boolean;
   fixedTitle?: boolean;
   dynamicTitleMaxItems?: number;
   maxHeight?: string;
@@ -54,6 +55,7 @@ export interface IMultiSelectSettings {
 export interface IMultiSelectTexts {
   checkAll?: string;
   uncheckAll?: string;
+  confirm?: string;
   checked?: string;
   checkedPlural?: string;
   searchPlaceholder?: string;

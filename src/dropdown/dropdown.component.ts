@@ -117,6 +117,7 @@ export class MultiselectDropdown implements OnInit, OnChanges, DoCheck, OnDestro
     autoUnselect: false,
     showCheckAll: false,
     showUncheckAll: false,
+    showConfirm: false,
     fixedTitle: false,
     dynamicTitleMaxItems: 3,
     maxHeight: '300px',
@@ -127,6 +128,7 @@ export class MultiselectDropdown implements OnInit, OnChanges, DoCheck, OnDestro
   defaultTexts: IMultiSelectTexts = {
     checkAll: 'Check all',
     uncheckAll: 'Uncheck all',
+    confirm: 'Ok',
     checked: 'checked',
     checkedPlural: 'checked',
     searchPlaceholder: 'Search...',
@@ -270,7 +272,8 @@ export class MultiselectDropdown implements OnInit, OnChanges, DoCheck, OnDestro
     this.filterControl.setValue('');
   }
 
-  toggleDropdown() {
+
+  () {
     this.isVisible = !this.isVisible;
     this.isVisible ? this.dropdownOpened.emit() : this.dropdownClosed.emit();
   }

@@ -119,6 +119,7 @@ myOptions: IMultiSelectOption[] = [
 | closeOnSelect        | If enabled, dropdown will be closed after selection                | false             |
 | showCheckAll         | Display the `checkAll` item to select all options                  | false             |
 | showUncheckAll       | Display the `uncheckAll` item to unselect all options              | false             |
+| showConfirm          | Display the `confirm` item to close Dropdown                       | false             |
 | fixedTitle           | Use the default title (do not apply the dynamic title)             | false             |
 | dynamicTitleMaxItems | The maximum number of options to display in the dynamic title      | 3                 |
 | maxHeight            | The maximum height for the dropdown (including unit)               | '300px'           |
@@ -135,6 +136,7 @@ myOptions: IMultiSelectOption[] = [
 | --------------------- | ------------------------------------------ | ----------------  |
 | checkAll              | The text for the "check all" option        | 'Check all'       |
 | uncheckAll            | The text for the "uncheck all" option      | 'Uncheck all'     |
+| confirm               | The text for the "confirm" option          | 'Ok'              |
 | checked               | Text for "checked" with single item selected (used in dynamic title)    | 'checked' |
 | checkedPlural         | Text for "checked" with multiple items selected (used in dynamic title) | 'checked' |
 | searchPlaceholder     | Text initially displayed in search input   | 'Search...'       |

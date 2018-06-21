@@ -28,6 +28,12 @@
         {{ texts.uncheckAll }}
       </a>
     </li>
+    <li class="dropdown-item check-control check-control-uncheck" *ngIf="settings.showConfirm">
+      <a href="javascript:;" role="menuitem" tabindex="-1" (click)="toggleDropdown()">
+        <span style="width: 16px;"></span>
+        {{ texts.confirm }}
+      </a>
+    </li>
     <li *ngIf="settings.showCheckAll || settings.showUncheckAll" class="dropdown-divider divider"></li>
     <li *ngIf="!renderItems" class="dropdown-item empty">{{ texts.searchNoRenderText }}</li>
     <li *ngIf="renderItems && !renderFilteredOptions.length" class="dropdown-item empty">{{ texts.searchEmptyResult }}</li>
